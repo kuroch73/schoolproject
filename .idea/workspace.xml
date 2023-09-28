@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f205235d-8ac4-4130-ba24-e761f1ebc070" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/testproject/testapp/templates/testapp/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testproject/testapp/templates/testapp/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testproject/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/testproject/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testproject/testapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/testproject/testapp/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testproject/testapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/testproject/testapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testproject/testapp/templates/testapp/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/testproject/testapp/templates/testapp/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testproject/testapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/testproject/testapp/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testproject/testapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/testproject/testapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testproject/testproject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/testproject/testproject/urls.py" afterDir="false" />
-    </list>
+    <list default="true" id="f205235d-8ac4-4130-ba24-e761f1ebc070" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,6 +41,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\KUR\PortableGit\schoolproject\testproject\static" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="schoolproject" />
