@@ -1,12 +1,14 @@
 from django.urls import path
 # from . import views
 from .views import *
-from django.contrib.auth.views import LoginView
+from testapp.views import registration
+
 
 urlpatterns = [
-    path('', index),
-    path('about', about),
-    path('Studentlist', Studentlist, name='Studentlist'),
-    path('hello/', hello_world),
-    path('login/', LoginView, name='login'),
+    path('', index, name='home' ),
+    path('Studentlist/', Studentlist, name='Studentlist'),
+    path('login/', loginStudent , name='login'),
+    path('goals/', goalsList, name='goals' ),
+    path('registration/', registration, name='registration'),
 ]
+# path ( 'адрес страниц', 'Views', 'имя вызова Views  адреса страницы')

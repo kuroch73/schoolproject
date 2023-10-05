@@ -6,7 +6,16 @@
 
 </head>
 <body>
-<h1>{{ message }}</h1>
-<a href="{% url 'login' %}"> Войти </a>
+<header>
+    <a class="testapp" href="{% url 'home' %}">Главная</a>
+    <a class="testapp" href="{% url 'Studentlist' %}">Список</a>
+    <a class="testapp" href="{% url 'goals' %}">Достижения</a>
+    <a href="{% url 'registration' %}"> ВОЙТИ </a>
+
+</header>
+{% block content %}
+{% endblock %}
+
+
 </body>
 </html>
