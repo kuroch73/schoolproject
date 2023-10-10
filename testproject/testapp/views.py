@@ -1,5 +1,9 @@
+from sqlite3 import IntegrityError
+
 from django.contrib.auth import authenticate, login
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm , AuthenticationForm
+from django.contrib.auth.models import User
+
 from .models import Student
 from django.shortcuts import render, redirect
 
@@ -31,4 +35,18 @@ def registration(request):
             return redirect('/')
     else:
         form = UserCreationForm()
-        return render(request, 'testapp/login.html', {'form': form})
+    return render(request, 'testapp/login.html', {'form': form})
+def reguserView(request):
+    if request.method == "GET":
+        return render(request, 'testapp/reguser.html', {'formuser' : UserCreationForm()})
+    else:
+        if request.POST['password1'] == request.POST['password2']:
+            try:
+                user = User.objects.create_user(request.POST['username'], password=request.POST['password1'])
+                user.save()
+                login(request, user)
+                return redirect('home')
+            except IntegrityError:
+                return render(request, 'testapp/reguser.html', {'formuser': UserCreationForm(), 'error': 'Это имя уже используется'})
+        else:
+            return render(request, 'testapp/reguser.html', {'formuser': UserCreationForm(), 'error': 'Пароль не совпадает'})

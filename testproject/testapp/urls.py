@@ -10,5 +10,6 @@ urlpatterns = [
     path('login/', loginStudent , name='login'),
     path('goals/', goalsList, name='goals' ),
     path('registration/', registration, name='registration'),
+    path('reguser/', reguserView, name='reguser')
 ]
 # path ( 'адрес страниц', 'Views', 'имя вызова Views  адреса страницы')
