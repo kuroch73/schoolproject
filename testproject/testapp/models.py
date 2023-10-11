@@ -9,11 +9,8 @@ class Task(models.Model):
         return self.title
 
 class Student(models.Model):
-    grade = models.IntegerField('оценка'),
-    tel = models.CharField('телефон', max_length=9),
+    grade = models.IntegerField('оценка')
+    tel = models.CharField('телефон', max_length=9)
     firstname = models.CharField('имя фамилия',max_length=20)
-
-    def __str__(self):
-        return f"{self.grade | self.tel | self.firstname}"
 
 
