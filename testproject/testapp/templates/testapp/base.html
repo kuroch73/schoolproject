@@ -1,18 +1,21 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-
+{% load static %}
+<link rel="stylesheet" href="{% static 'home/style/style.css' %}">
+<link rel="stylesheet" href="{% static 'testproject/style/script.js' %}">
 </head>
+
 <body>
 <header>
-    <a class="testapp" href="{% url 'home' %}">Главная</a>
+    <a href="{% url 'home' %}" class="testapp">Главная</a>
     <a class="testapp" href="{% url 'Studentlist' %}">Список</a>
     <a class="testapp" href="{% url 'goals' %}">Достижения</a>
     <a href="{% url 'registration' %}"> РЕГИСТРАЦИЯ </a>
     <a href="{% url 'reguser' %}"> ВХОД </a>
-
 </header>
 {% block content %}
 {% endblock %}
