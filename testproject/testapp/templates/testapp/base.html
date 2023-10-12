@@ -5,18 +5,20 @@
     <meta charset="UTF-8">
     <title>Title</title>
 {% load static %}
-<link rel="stylesheet" href="{% static 'home/style/style.css' %}">
-<link rel="stylesheet" href="{% static 'testproject/style/script.js' %}">
+<link rel="stylesheet" href="{% static 'style/style.css' %}">
+<link rel="stylesheet" href="{% static 'script/script.js' %}">
 </head>
 
 <body>
+<div class="header">
 <header>
-    <a href="{% url 'home' %}" class="testapp">Главная</a>
+    <a  class="testapp" href="{% url 'home' %}">Главная</a>
     <a class="testapp" href="{% url 'Studentlist' %}">Список</a>
     <a class="testapp" href="{% url 'goals' %}">Достижения</a>
     <a href="{% url 'registration' %}"> РЕГИСТРАЦИЯ </a>
     <a href="{% url 'reguser' %}"> ВХОД </a>
 </header>
+</div>
 {% block content %}
 {% endblock %}
 

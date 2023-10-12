@@ -5,25 +5,17 @@ body {
   margin: 0;
 }
 .sample-header {
-  position: fixed;
+  position: relative;
   left: 0;
-  top: 0;
+  top: 50px;
   width: 100%;
-  background-image: url("http://webmadewell.com/wp-content/uploads/2018/01/img-bg-sample-parallax-header.jpg");
-  background-position: center;
+  background-image: "static/img/mir1_png";
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+
 }
-.sample-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: MidnightBlue;
-  opacity: 0.3;
-}
+
 .sample-header-section {
   position: relative;
   padding: 15% 0 10%;
@@ -46,7 +38,7 @@ h2 {
   background-color: white;
 }
 .sample-section {
-  position: relative;
+  position: fixed;
   max-width: 640px;
   margin-left: auto;
   margin-right: auto;
@@ -58,7 +50,25 @@ h2 {
   max-width: 640px;
   margin-left: auto;
   margin-right: auto;
-  color: green;
+  color: red;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
   font-family: "Montserrat", sans-serif;
+}
+.image {
+position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 75%;
+  min-height: 50%
+}
+.header {
+position: fixed;
+    height: 30px;
+    width: 100%;
+    background: grey;
+    right: 0;
+    top: 0;
 }
